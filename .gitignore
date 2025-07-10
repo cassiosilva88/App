@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+*.sqlite3
+
+# Streamlit secrets
+.streamlit/secrets.toml
+config.yaml  # se quiser ocultar o arquivo de usuários
+
+# VSCode
+.vscode/
+
+# macOS / Linux
+.DS_Store
