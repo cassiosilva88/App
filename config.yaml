@@ -1,0 +1,13 @@
+credentials:
+  usernames:
+    cassio:
+      name: Cassio Carlos
+      password: '12345'  # use hash em produção
+    maria:
+      name: Maria Silva
+      password: 'senha123'
+
+cookie:
+  name: autentica_app
+  key: some_signature_key
+  expiry_days: 1
