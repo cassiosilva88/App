@@ -2,10 +2,10 @@ credentials:
   usernames:
     cassio:
       name: Cassio Carlos
-      password: '12345'  # use hash em produção
+      password: '$2b$12$JatuEkwo32aCFBBSrkZAAOd2lSunsVN1TDagq25kqPHG.EvSQcCRK'  # use hash em produção
     maria:
       name: Maria Silva
-      password: 'senha123'
+      password: '$2b$12$F/POs6NzWZxwDWn/oqW.2.YvnlWuB7G9fzu4RUeHowd36tWI7rJMm'
 
 cookie:
   name: autentica_app

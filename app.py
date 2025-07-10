@@ -15,7 +15,11 @@ authenticator = stauth.Authenticate(
     config['cookie']['expiry_days']
 )
 
-name, authentication_status, username = authenticator.login("Login", "main")
+name, authentication_status, username = authenticator.login(
+    form_name="Login",
+    location="main"
+)
+
 
 if authentication_status:
     st.sidebar.success(f"Bem-vindo, {name}!")
@@ -25,9 +29,11 @@ if authentication_status:
 
     # Exemplo de acesso por usuário
     if username == "cassio":
-        st.markdown("[Dashboard de Operações](https://app.powerbi.com/view?r=LINK_DO_DASH_1)")
+        st.markdown(
+            "[Dashboard - Cerseg](https://app.powerbi.com/view?r=eyJrIjoiNzE4MmJjMjAtZWZmNC00YWZmLTgxMGEtMTRjNjFiYzE4YmZlIiwidCI6IjRiZjJiODMzLTZhMzUtNDgwNy04YmI0LWY2Njk0YTg1YmU0MSJ9)")
     elif username == "maria":
-        st.markdown("[Dashboard Financeiro](https://app.powerbi.com/view?r=LINK_DO_DASH_2)")
+        st.markdown(
+            "[Dashboard Financeiro](https://app.powerbi.com/view?r=LINK_DO_DASH_2)")
     else:
         st.info("Nenhum dashboard disponível para seu usuário.")
 
